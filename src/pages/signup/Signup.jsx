@@ -3,7 +3,10 @@ import "../login/login.css";
 import TextField from "../../components/textfield/TextField";
 import Textbutton from "../../components/textbutton/Textbutton";
 import Button from "../../components/button/Button";
+import { useNavigate } from "react-router-dom";
 const Signup = () => {
+  const navigate = useNavigate()
+
   return (
     <div className="main">
       <div className="login">
@@ -19,25 +22,16 @@ const Signup = () => {
             id={"p"}
           />
           <TextField
-            label={"Password"}
+            label={"Conform Password"}
             place={"Enter your password"}
             id={"p"}
           />
-          <div className="row">
-            <div className="remember">
-              <input type="checkbox" />
-              <label htmlFor="">Remember me</label>
-            </div>
-            <Textbutton
-              text={"Forgot password?"}
-              click={() => console.log("chch")}
-            />
-          </div>
+      
           <Button text={"Submit"} />
         </form>
         <div className="row2">
           <div className="notmember">Not a member?</div>
-          <Textbutton text={"Sign up"} click={() => console.log("pcfp")} />
+          <Textbutton text={"Login"} click={() => navigate('/login')} />
         </div>
       </div>
     </div>

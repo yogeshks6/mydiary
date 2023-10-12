@@ -3,8 +3,9 @@ import Button from "../../components/button/Button";
 import "../login/login.css";
 import TextField from "../../components/textfield/TextField";
 import Textbutton from "../../components/textbutton/Textbutton";
-
+import { useNavigate } from "react-router-dom";
 const Login = () => {
+  const navigate = useNavigate()
   return (
     <div className="main">
       <div className="login">
@@ -34,7 +35,7 @@ const Login = () => {
           <div className="notmember">
             Not a member?
           </div>
-        <Textbutton text={"Sign up"} click={()=> console.log("pcfp")}/>
+        <Textbutton text={"Sign up"} click={()=> navigate("/signup")}/>
         </div>
       </div>
     </div>
