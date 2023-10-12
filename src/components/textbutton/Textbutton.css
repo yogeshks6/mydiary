@@ -1,0 +1,8 @@
+.forgot{
+
+font-size: 18px;
+cursor: pointer;
+}
+.forgot:hover{
+    color: rgb(32, 32, 221);
+}

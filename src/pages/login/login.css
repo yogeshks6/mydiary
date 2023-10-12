@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url(../../assets/diary.jpg
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main {
+  display: flex;
+  justify-content: center;
+}
+.log {
+  line-height: 60px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.login {
+  backdrop-filter:blur(15px);
+  background-color: rgba(248, 239, 238, 0.2);
+  /* background-color: rgb(243, 168, 168); */
+  display: inline-block;
+  border: 2px solid black;
+  margin-top: 50px;
+  padding: 10px 20px 100px 40px;
+  border-radius: 10px;
+}
+.row{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.remember>label{
+  font-size: 20px;
+  margin-left: 8px;
+}
+.row2{
+  display: flex;
+justify-content: center;
+margin-top: 20px;
+}
+.notmember{
+  font-size: 18px;
+}
